@@ -1,0 +1,79 @@
+*{
+    margin: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.gato{
+    width: 200px;
+    height: 200px;
+    
+}
+.text{
+    text-align: justify;
+    padding-right: 20%;
+}
+h2{
+    font-weight: bold;
+}
+.footer{
+    margin-top: 20px;
+}
+.form-h2{
+    margin-top: 20px;
+    text-align: center;
+}
+.form__details{
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   padding: 10px;
+    border:1px solid darkcyan;
+    /* background-color: dodgerblue;     */
+}
+.container-form__field{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    /* padding: 10px; */
+}
+
+.form__field{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 180px;
+    gap: 4px;
+    padding: 10px;
+    /* background-color: rgb(139, 255, 30); */  
+}
+.form__field input{
+    padding: 5px;
+    margin: 2px;
+}
+
+.sexCatList{
+   font-size: 0.9rem;
+    padding: 5px;
+}
+
+.button-details{
+    width: 100px;
+    
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: 1px solid white;
+    border-radius: 20px;
+}
+
+.button-details:hover {
+    background-color: aqua;
+}
+
+.button-details:hover .select {
+    font-size: 130%;
+    background: white;
+    color: #436174;
+}
+.off {
+    display: none;
+}
