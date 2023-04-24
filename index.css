@@ -202,36 +202,32 @@ button{
 }
 
 /* ====================================================== */
-.result{
-  height: 100%;
-}
-.stickyHeader {
-  position: sticky;
-  top: 0;
-  background-color: rgb(255, 255, 255);
-  z-index: 10000;
-}
 /* TODO no me funciona el sticky corregir luego */
 /* .stickyHeader:sticky{
   background-color: #0f29f1;
   border: 1px solid black; 
 } */
+/* .result{
+  height: 100%;
+} */
+.stickyHeader {
+  position: sticky;
+  top: 0;
+  background-color: rgb(255, 255, 255);
+
+}
+
 .table {
     border-collapse: collapse;
     width: 100%;
     display: block;
     max-height: 300px;
     /* tabla-responsive ya hace el overflow: auto */
-    /* overflow-y: auto;
-    overflow-x: hidden; */
   }
   .table th,.table td{
     border: 1px solid black;
-    padding: 5px;
+    padding: 5px 50px 5px 5px;
   }
-  /* .table thead{
-    background-color: #FFF;
-  } */
 
   tr.fila-par {
     background-color: rgb(245,245,221);
@@ -350,7 +346,7 @@ button{
     color: #333;
   }
   
-  .modal-content-text button {
+  .btn-danger{
     background-color: #ff6b6b;
     color: #fff;
     border: none;
@@ -361,9 +357,41 @@ button{
     transition: background-color 0.3s ease;
   }
   
-  .modal-content-text button:hover {
+  .btn-danger:hover {
     background-color: #ff4d4d;
   }
+
+  .btn-green{
+    width: 20%;
+    background-color: rgb(76,175,82);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-green:hover {
+    background-color: rgb(30, 144, 38);
+  }
+
+  .btn-blue{
+    width: 20%;
+    background-color: rgb(33, 84, 160);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  .btn-blue:hover {
+    background-color: rgb(38, 101, 196);
+  }
+
 /* ===================================================== */
 .my-footer{
     display: flex;

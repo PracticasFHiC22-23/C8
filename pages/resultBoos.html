@@ -101,8 +101,8 @@ BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="an
               <div class="modal-text" v-if="modalBorrado" @click.self="cerrarModal" v-cloak>
                 <div class="modal-container-text">
                   <div class="modal-content-text">
-                    <p class="modal-message">Por favor ingresa el nombre y edad de tu gato</p>
-                    <button class="btn-yellow" @click="cerrarModal">Cerrar</button>
+                    <p class="modal-message">{{ modalMessage }}</p>
+                    <button class="btn-blue" @click="cerrarModal">Cerrar</button>
                   </div>
                 </div>
             </div>
