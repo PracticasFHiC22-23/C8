@@ -409,6 +409,7 @@ button{
 .flex-center{
   display: flex;
   justify-content: center;
+  align-content: center;
   align-items: center;
 }
 .flex-center-column{
@@ -417,6 +418,64 @@ button{
   justify-content: center;
   align-items: center;
 }
+
+/* ===========Menu Desplegable=========== */
+.container-btnMenu{
+  height: 50%;
+}
+.btn-menu{
+  height: 100%;
+  padding: 5px 5px;
+  background-color: transparent;
+}
+.navbar-toggler-icon {
+  display: inline-block;
+  width: 30px;
+  height: 100%;
+  gap: 10px;
+  position: relative;
+  cursor: pointer;
+}
+.line {
+  display: block;
+  width: 100%;
+  background-color: #000;
+  border-top: 4px solid black;
+  position: absolute;
+  left: 0;
+  transform-origin: center;
+  transition: transform 0.3s ease-out;
+}
+.line-1 {
+  top: 0;
+}
+.line-2 {
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 1;
+}
+.line-3 {
+  bottom: 0;
+}
+.active .line-1 {
+  transform: translateY(12px) rotate(50deg);
+  
+}
+.active .line-2 {
+  transform: rotate(45deg);
+  transition: transform 0.15s ease-in-out;
+  opacity: 0;
+}
+.active .line-3 {
+    transform: translateY(-11px) rotate(-50deg);
+    transition: transform 0.15s ease-in-out;
+}
+
+
+
+
+/*test  */
+
 
 
 /*=======MediasQuerys================  */
@@ -463,7 +522,17 @@ button{
   padding: 10px;
   margin: 10px;
 }
-/* .containerResult h4{
-padding-top:20px;
-} */
+ /* Menu Desplegable */
+ .text-navGlobal h1{
+  font-size: calc(1.1rem + 1.5vw);
+ }
+ .container-btnMenu {
+  height: 60%;
+}
+ .btn-menu {
+  width: 88%;
+  padding: 5px 5px;
+  /* background-color: rgb(245,245,221); */
+  background-color: transparent;
+}
 }

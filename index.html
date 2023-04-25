@@ -9,27 +9,38 @@ rel="stylesheet" integrity="sha384-
 BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 <script src="https://unpkg.com/vue@next" defer></script>
 <script type="module" src="app.js" defer></script>    
-    <link rel="stylesheet" href="../index.css" >
+    <link rel="stylesheet" href="/index.css" >
     <link rel="icon" type="image/png" href="imagenes/cinta-de-pelicula.png">
 
     <title>Gatalia</title>
   </head>
   <body>
     <div id="app" class="container">
-       <div class="row header-fila">
-            <div class="col-md-12 navGlobal">
+       <div class="row header-fila flex-center">
+        <div class="col-md-2 col-2 container-btnMenu flex-center">
+          <button class="navbar-toggler btn-menu flex-center" type="button" :class="{ 'active': showNav }" @click="toggleNav">
+            <span class="navbar-toggler-icon">
+              <span class="line line-1"></span>
+              <span class="line line-2"></span>
+              <span class="line line-3"></span>
+            </span>
+          </button>
+        </div>    
+        <div class="col-md-8 col-10 navGlobal">
                <!-- Contenido de Header -->
                     <a href="index.html" class="text-navGlobal">
                       <h1>Gatalia: la web de los gatos</h1>
                     </a>
             </div>
+            <div class="col-md-2 col-10"></div>
        </div>
         
         <div class="row main-fila">
           <!-- TODO hacer que navLoc sea desplegable -->
-            <div class="col-md-2 col-12 container-navLoc">
+            <div class="col-md-2 col-12 container-navLoc" :class="{ 'd-none': !showNav }">
               <!-- Contenido de navLocal -->
               <div class="row navLoc">
+                <!-- Botón para desplegar/ocultar el menú -->
                 <div class="col-md-12 col-6 flex-center-column">
                   <p><b>Razas</b></p>
                   <ul class="razas">
@@ -42,9 +53,10 @@ BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="an
                     <a href="pages/formBoos.html">Sobre tu gato</a>
                   </div>
                 </div>
+              
               </div>
             </div>
-            <div class="col-md-10 col-12 content flex-center">
+            <div class="col-md-10 col-12 content flex-center" :class="{ 'col-md-12 h-100': !showNav }">
               <!-- Contenido de content -->
               <article class="articleIn">
                 <div class="text-content">

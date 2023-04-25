@@ -8,7 +8,8 @@ const miapp = Vue.createApp({
         indexModal:null,
         modalActivo:false,
         modalMessage:'',
-        modalClass:''
+        modalClass:'',
+        showNav:false
       }
     },
     methods: {
@@ -96,6 +97,9 @@ const miapp = Vue.createApp({
           // this.modalMessage=`El gato ${gatoEliminado} fue eliminado`
           // this.modalText = true;
         
+      },
+      toggleNav() {
+        this.showNav = !this.showNav;
       }
     },
     mounted() {
