@@ -10,6 +10,7 @@ BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="an
 <script src="https://unpkg.com/vue@next" defer></script>
     <script type="module" src="../app.js" defer></script>    
     <link rel="stylesheet" href="../index.css" >
+    <link rel="icon" type="image/png" href="imagenes/cinta-de-pelicula.png">
     <title>Gatalia</title>
   </head>
   <body>
@@ -98,20 +99,12 @@ BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="an
               </div>
               <!-- ========================================================= -->
               <!-- Modal de mensaje de borrado -->
-<<<<<<< HEAD
-              <div class="modal-text" v-if="modalBorrado" @click.self="cerrarModal" v-cloak>
-                <div class="modal-container-text">
-                  <div class="modal-content-text">
-                    <p class="modal-message">{{ modalMessage }}</p>
-                    <button class="btn-blue" @click="cerrarModal">Cerrar</button>
-=======
               <div class="modal-text" v-if="modalText" @click.self="cerrarModal" v-cloak>
                 <div class="modal-container-text">
                   <div class="modal-content-text">
                     <p class="modal-message">{{ modalMessage }}</p>
                     <button :class="modalClass" @click="cerrarModal">Cerrar</button>
                     
->>>>>>> main
                   </div>
                 </div>
             </div>

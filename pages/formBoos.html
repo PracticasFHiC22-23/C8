@@ -10,6 +10,7 @@ BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="an
 <script src="https://unpkg.com/vue@next" defer></script>
     <script type="module" src="../app.js" defer></script>    
     <link rel="stylesheet" href="../index.css" >
+    <link rel="icon" type="image/png" href="imagenes/cinta-de-pelicula.png">
     <title>Gatalia</title>
   </head>
   <body>
@@ -55,41 +56,17 @@ BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="an
                         </div>
                     </div>
                 </form>
-<<<<<<< HEAD
-=======
                 
                 <!-- Modal no datos / Modal Guardado o Actualizado-/ dependiendo la clase-->
->>>>>>> main
                 <!-- @click.self para cerrar el modal con un click fuera de el  -->
                 <div class="modal-text" v-if="modalText" @click.self="cerrarModal" v-cloak>
                     <div class="modal-container-text">
                       <div class="modal-content-text">
                         <p class="modal-message">{{ modalMessage }}</p>
-<<<<<<< HEAD
-                        <button class="btn-danger" @click="cerrarModal">Cerrar</button>
-                      </div>
-                    </div>
-                </div>
-
-                <div class="modal-text" v-if="modalGuardado" @click.self="cerrarModal" v-cloak>
-                  <div class="modal-container-text">
-                    <div class="modal-content-text">
-                      <p class="modal-message">{{ modalMessage }}</p>
-                      <button class="btn-green" @click="cerrarModal">Cerrar</button>
-                    </div>
-                  </div>
-              </div>
-
-              
-
-
-                  
-=======
                         <button :class="modalClass" @click="cerrarModal">Cerrar</button>
                       </div>
                     </div>
                 </div> 
->>>>>>> main
                 <button class="link-result" @click="pagResult">resultados</button>
             </div>
            </div>
