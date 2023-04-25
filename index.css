@@ -362,7 +362,7 @@ button{
   }
 
   .btn-green{
-    width: 20%;
+    /* width: 20%; */
     background-color: rgb(76,175,82);
     color: #fff;
     border: none;
@@ -378,7 +378,7 @@ button{
   }
 
   .btn-blue{
-    width: 20%;
+    /* width: 20%; */
     background-color: rgb(33, 84, 160);
     color: #fff;
     border: none;
